@@ -1,0 +1,58 @@
+html{
+    /*tomado de https://www.magicpattern.design/tools/css-backgrounds*/
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #2c2d35, #0d0f8d), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-size: larger;
+}
+-form-container{
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form+p, form p{
+    text-align: center;
+}
+
+input,button{
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+    font-size: larger;
+}
+
+button{
+    background-color: #1ce02c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.error{
+    color: #d4cd67;
+}
+
+.sr-only{
+    position: absolute;
+    left: -100000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

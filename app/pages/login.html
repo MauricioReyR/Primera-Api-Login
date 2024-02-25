@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+           <h1>Iniciar Sesion</h1>
+           <p>Ingresa tus credenciales  para acceder al area  de administracion</p>
+           <form id="login-form">
+           <label for="user" class="sr-only">User</label>
+           <input type="text" name="user" id="user" placeholder="Ingrese el nombre del usuario">     
+           <label for="password" class="sr-only">Password</label>
+           <input type="password" name="password" id="pass" placeholder="Ingrese la contraseña">     
+           <button type="submit">Inicio de Sesion</button>   
+           <p class="error">Error al iniciar las sesion</p>  
+        </form>
+            <p>¡No tienes cuenta? -<a href="/register">Registrate</a></p>
+        </div>   
+
+   </main>
+</body>
+</html>
